@@ -1,0 +1,75 @@
+#face{
+    border: 2px solid;
+    height: 350px;
+    width: 350px;
+    background:yellow;
+    border-radius: 200px;
+}
+#eye-container{
+    /*border: 1px solid;*/
+    position: absolute;
+    height: 100px;
+    width: 250px;
+    top: 150px;
+    left: 550px;
+}
+#left-eye,#right-eye{
+    border:1px solid black;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    border-radius: 50px;
+}
+#right-eye{
+    left: 150px;
+
+}
+#left-eye::before,#right-eye::before{
+    content:"";
+    position: absolute;
+    border:1px solid white ;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50px;
+    top: 35px;
+    left: 35px;
+    transition: transform 1.5s ease-in-out;
+
+
+}
+#mouth{
+    position: absolute;
+    border: 1px solid black;
+    background-color: black;
+    width: 135px;
+    height: 80px;
+    top: 300px;
+    left: 610px;
+    border-radius: 10px 10px 100px 100px;
+}
+
+#mouth:hover{
+    transform: scale(1.5);
+    
+}
+#right-eye:hover{
+    transform: scale(1.5);
+
+    transition: transform 1.5s ease-in-out;
+    
+
+}
+#left-eye:hover{
+    transform: scale(1.5);
+    transition: transform 1.5s ease-in-out;
+
+}
+h1{
+    background-color: #57c9d7;
+    
+}
+body{
+    background-color:#e9e5e1;
+}
